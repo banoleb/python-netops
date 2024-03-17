@@ -1,0 +1,89 @@
+sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.10.1.1       YES NVRAM  up                    up      
+FastEthernet0/1            192.168.1.71    YES DHCP   up                    up      
+FastEthernet1/0            unassigned      YES unset  administratively down down    
+FastEthernet1/1            unassigned      YES unset  administratively down down    
+FastEthernet1/2            unassigned      YES unset  administratively down down    
+FastEthernet1/3            unassigned      YES unset  administratively down down    
+FastEthernet1/4            unassigned      YES unset  administratively down down    
+FastEthernet1/5            unassigned      YES unset  administratively down down    
+FastEthernet1/6            unassigned      YES unset  administratively down down    
+FastEthernet1/7            unassigned      YES unset  administratively down down    
+FastEthernet1/8            unassigned      YES unset  administratively down down    
+FastEthernet1/9            unassigned      YES unset  administratively down down    
+FastEthernet1/10           unassigned      YES unset  administratively down down    
+FastEthernet1/11           unassigned      YES unset  administratively down down    
+FastEthernet1/12           unassigned      YES unset  administratively down down    
+FastEthernet1/13           unassigned      YES unset  administratively down down    
+FastEthernet1/14           unassigned      YES unset  administratively down down    
+FastEthernet1/15           unassigned      YES unset  administratively down down    
+Vlan1                      unassigned      YES NVRAM  administratively down down    
+sh ip route | ex -
+Default gateway is 192.168.1.1
+
+Host               Gateway           Last Use    Total Uses  Interface
+ICMP redirect cache is empty
+sh ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            10.10.1.2       YES NVRAM  up                    up      
+FastEthernet0/1            192.168.1.72    YES DHCP   up                    up      
+FastEthernet1/0            unassigned      YES unset  administratively down down    
+FastEthernet1/1            unassigned      YES unset  administratively down down    
+FastEthernet1/2            unassigned      YES unset  administratively down down    
+FastEthernet1/3            unassigned      YES unset  administratively down down    
+FastEthernet1/4            unassigned      YES unset  administratively down down    
+FastEthernet1/5            unassigned      YES unset  administratively down down    
+FastEthernet1/6            unassigned      YES unset  administratively down down    
+FastEthernet1/7            unassigned      YES unset  administratively down down    
+FastEthernet1/8            unassigned      YES unset  administratively down down    
+FastEthernet1/9            unassigned      YES unset  administratively down down    
+FastEthernet1/10           unassigned      YES unset  administratively down down    
+FastEthernet1/11           unassigned      YES unset  administratively down down    
+FastEthernet1/12           unassigned      YES unset  administratively down down    
+FastEthernet1/13           unassigned      YES unset  administratively down down    
+FastEthernet1/14           unassigned      YES unset  administratively down down    
+FastEthernet1/15           unassigned      YES unset  administratively down down    
+Vlan1                      unassigned      YES NVRAM  administratively down down    
+sh int desc
+Interface                      Status         Protocol Description
+Fa0/0                          up             up       
+Fa0/1                          up             up       
+Fa1/0                          admin down     down     
+Fa1/1                          admin down     down     
+Fa1/2                          admin down     down     
+Fa1/3                          admin down     down     
+Fa1/4                          admin down     down     
+Fa1/5                          admin down     down     
+Fa1/6                          admin down     down     
+Fa1/7                          admin down     down     
+Fa1/8                          admin down     down     
+Fa1/9                          admin down     down     
+Fa1/10                         admin down     down     
+Fa1/11                         admin down     down     
+Fa1/12                         admin down     down     
+Fa1/13                         admin down     down     
+Fa1/14                         admin down     down     
+Fa1/15                         admin down     down     
+Vl1                            admin down     down     
+sh int desc
+Interface                      Status         Protocol Description
+Fa0/0                          up             up       
+Fa0/1                          up             up       
+Fa1/0                          admin down     down     
+Fa1/1                          admin down     down     
+Fa1/2                          admin down     down     
+Fa1/3                          admin down     down     
+Fa1/4                          admin down     down     
+Fa1/5                          admin down     down     
+Fa1/6                          admin down     down     
+Fa1/7                          admin down     down     
+Fa1/8                          admin down     down     
+Fa1/9                          admin down     down     
+Fa1/10                         admin down     down     
+Fa1/11                         admin down     down     
+Fa1/12                         admin down     down     
+Fa1/13                         admin down     down     
+Fa1/14                         admin down     down     
+Fa1/15                         admin down     down     
+Vl1                            admin down     down     
