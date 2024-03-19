@@ -1,0 +1,10 @@
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+router1(config)#logging 10.5.5.5
+router1(config)#end
+router1#
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+router3(config)#logging 10.5.5.5
+router3(config)#end
+router3#

@@ -6,9 +6,9 @@ from netmiko import  ConnectHandler
 # Этот словарь нужен только для проверки работа кода, в нем можно менять IP-адреса
 # тест берет адреса из файла devices.yaml
 commands = {
-    "192.168.1.71": ["sh ip int br", "sh ip route | ex -"],
-    "192.168.1.72": ["sh ip int br", "sh int desc"],
-    "192.168.1.74": ["sh int desc"],
+    "192.168.1.79": ["sh ip int br", "sh ip route | ex -"],
+    "192.168.1.80": ["sh ip int br", "sh int desc"],
+    "192.168.1.80": ["sh int desc"],
 }
 
 def send_show_command(device, command):
