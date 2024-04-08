@@ -24,9 +24,9 @@ class CiscoTelnet:
 
 tel_set = {
     "ip": "192.168.1.85",
-    "username": "cisco",
+    "username": "admin",
     "password": "qwerty",
     "secret": "router1",
 }
-telneter = CiscoTelnet(tel_set["ip"],tel_set["password"],tel_set["secret"],tel_set["username"])
+telneter = CiscoTelnet(tel_set["ip"],tel_set["username"],tel_set["password"],tel_set["secret"])
 print(telneter.send_show_command("sh ip int br"))

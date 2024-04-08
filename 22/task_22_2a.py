@@ -11,7 +11,7 @@ class CiscoTelnet:
         self._write_line("enable")
         self.telnet.read_until(b"Password:")
         self._write_line(secret)
-        self._write_line("terminal length 0") 
+        self._write_line("terminal length 0")
         time.sleep(1)
         self.telnet.read_very_eager()
 
@@ -22,22 +22,24 @@ class CiscoTelnet:
         self._write_line(command)
         time.sleep(1)
         result = self.telnet.read_very_eager().decode("ascii")
+
         if  parse == False:
             return result
         attributes = {"Command": command, "Vendor": "cisco_ios"}
         cli = clitable.CliTable(index, templates)
         cli.ParseCmd(result, attributes)
+        
         return [dict(zip(cli.header, row)) for row in cli]
 
 
-
-tel_set = {
-    "ip": "192.168.1.85",
-    "username": "cisco",
-    "password": "qwerty",
-    "secret": "router1",
-}
-telneter = CiscoTelnet(tel_set["ip"],tel_set["password"],tel_set["secret"],tel_set["username"])
-print(telneter.send_show_command("sh ip int br"))
+if __name__ == "__main__":
+    tel_set = {
+        "ip": "192.168.1.85",
+        "username": "admin",
+        "password": "qwerty",
+        "secret": "router1",
+    }
+    telneter = CiscoTelnet(tel_set["ip"],tel_set["username"],tel_set["password"],tel_set["secret"])
+    print(telneter.send_show_command("sh ip int br"))
 
 #print(telneter.send_show_command("sh ip int br", parse=False))

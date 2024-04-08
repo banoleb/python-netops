@@ -15,5 +15,6 @@ class Topology:
             if not self.topology.get(value) == key:
                 self.topology[key] =  value
 
-top = Topology(topology_example)
-print(top.topology)
+if __name__ == "__main__":
+    top = Topology(topology_example)
+    print(top.topology)
